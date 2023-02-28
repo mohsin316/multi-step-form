@@ -10,7 +10,6 @@ This is a solution to the [Multi-step form challenge on Frontend Mentor](https:/
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -46,10 +45,12 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/multistep-form-using-react-formik-and-framermotion--Pbsh-KuZr)
+- Live Site URL: [Add live site URL here](https://mohsin316.github.io/multi-step-form/)
 
 ## My process
+
+I built this with the help of react, formik and framer motion. Im glad it turned out the way it did. Only issue is when the user does not select a plan and decides to go to the previous component, they will not be able to go forward as clicking the next button submits the form and formik will not allow this as they have not selected a plan which is a required field. If anyone can find a better solution to that do let me know!
 
 ### Built with
 
@@ -61,11 +62,6 @@ Users should be able to:
 - [React](https://reactjs.org/) - JS library
 - Formik library
 - Framer motion
-
-### What I learned
-
-
-
 ### Useful resources
 
 - [net ninja](https://netninja.dev/courses) - This helped me for Studying javascript. I really liked this course and i highly recommend to begginers.
