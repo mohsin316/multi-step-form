@@ -11,6 +11,8 @@
 # production
 /build
 
+/FEM
+
 # misc
 .DS_Store
 .env.local

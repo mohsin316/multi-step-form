@@ -1,0 +1,46 @@
+.thankyou-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 1rem;
+    text-align: left;
+    background-color: white;
+    border-radius: 10px;
+    transform: translateY(-50px);
+    max-width: 400px;
+    overflow: hidden;
+}
+
+.thankyou-form img{
+    width: 50px;
+    height: 50px;
+}
+
+.thankyou-form h1{
+    margin-block: 1rem .5rem ;
+    font-size: 1.5rem;
+}
+
+.thankyou-form p {
+    color: hsl(var(--cool-gray));
+    text-align: center;
+}
+
+@media (min-width: 50rem){
+    .thankyou-form{
+        margin: auto 0;
+        transform: translateY(0px);
+        min-width: 100%;
+    }
+    .thankyou-form img{
+        width: 100px;
+        height: 100px;
+    }
+    
+    .thankyou-form h1{
+        margin-block: 1rem .75rem ;
+        font-size: 2.5rem;
+    }
+    
+}

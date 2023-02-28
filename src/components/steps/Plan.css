@@ -1,0 +1,135 @@
+.plan-form{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: left;
+    background-color: white;
+    border-radius: 10px;
+    transform: translateY(-50px);
+    max-width: 400px;
+
+}
+
+.plan-form h1{
+    font-size: 1.5rem;
+    color: hsl(var(--Marine-blue));
+}
+.plan-form p{
+    color: hsl(var(--cool-gray));
+    margin-bottom: 1.25rem;
+}
+
+.plan-form strong{
+    color: hsl(var(--Marine-blue));
+}
+
+.radio-container{
+    width: 100%;
+}
+
+.radio-container > input {
+    display: inline-block;
+    margin-right: -2px;
+    top: 0;
+    bottom: 0;
+    height: 30px;
+    min-width: 30px;
+    width: auto;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0;
+}
+.plan-form p.error-message{
+    justify-self: center;
+    align-self: center;
+    margin-top: 1rem;
+    font-weight: var(--fwL);
+    text-decoration: underline;
+    font-size: 1.25rem;
+    text-align: center;
+    color: red;
+  }
+
+form .radio-container > input[type='radio']:checked + label {
+    background-color: hsl(var(--purpleish-blue) / .1);
+}
+
+.radio-container > *:where(:not(:last-child)) {
+    margin-bottom: 1rem;
+}
+
+.radio-container > label {
+    cursor: pointer;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    outline: 1px solid hsl(var(--cool-gray));
+    gap: .75rem;
+    display: flex;
+}
+
+.radio-container > label div{
+    display: flex;
+    flex-direction: column;
+}
+.radio-container > label div span{
+    color: hsl(var(--cool-gray));
+}
+
+
+@media (min-width:60rem){
+    .plan-form{
+        padding: 2rem 1rem;
+        margin-top: 1rem;
+        text-align: left;
+        border-radius: 10px;
+        transform: translateY(0);
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .plan-form h1{
+        margin-bottom: .5rem;
+        font-size: 2rem;
+        color: hsl(var(--Marine-blue));
+    }
+    
+    .plan-form > *:where(:not(:last-child)) {
+        margin-bottom: 2rem;
+    }
+    
+    .radio-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+    }
+
+    .radio-container > input[type='radio']:checked + label {
+        outline: 1px solid hsl(var(--purpleish-blue)) !important; 
+        background-color: hsl(var(--purpleish-blue) / .1);
+    }
+
+    .radio-container > label {
+        margin-top: 2rem;
+        border-radius: 5px;
+        padding-block: 1.5rem;
+        outline: 1px solid hsl(var(--cool-gray));
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+        flex-direction: column;
+    }
+
+    .radio-container > *:where(:not(:last-child)) {
+        margin-bottom: 0rem;
+    }
+
+    .radio-container > label img{
+       width: 50px;
+       height: 50px;
+    }
+   
+}

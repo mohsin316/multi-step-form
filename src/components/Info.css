@@ -1,0 +1,111 @@
+.info-holder{
+    background-image: url('../assets/bg-sidebar-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size:  cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 1rem clamp(5rem, 20vw ,10rem);
+    grid-column: 1/2;
+
+}
+
+.info-container{
+    display: flex;
+    padding-right: 5px;
+}
+
+.info-container > *:where(:not(:last-child)){
+    margin-right: 15px;
+}
+
+.step-num{
+    outline: 1px solid hsl(var(--white));
+    color: hsl(var(--white));
+    margin-top: .75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.step-num.current{
+    background-color: hsl(var(--light-blue) / 1);
+    color: hsl(var(--Marine-blue) / 1); 
+    outline: none;
+}
+
+.step-stat{
+    display: none;
+}
+
+@media (min-width: 60rem){
+    .info-holder{
+        background-image: url('../assets/bg-sidebar-desktop.svg');
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size:cover;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        padding-block: 0;
+        width: 100%;
+        border-radius: 20px;
+
+    }
+    
+    .info-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        padding: 2rem ;
+    }
+    
+    .info-container > *:where(:not(:last-child)){
+        margin-bottom: 15px;
+    }
+    
+    .step{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .step-num{
+        background-color: transparent;
+        outline: 1px solid hsl(var(--white));
+        color: hsl(var(--white));
+        margin-top: .75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    
+    .step-stat{
+        display: flex;
+        flex-direction: column;
+        line-height: 1rem;
+        gap: .25rem;
+        margin-bottom: 5px;
+        align-self: end;
+    }
+
+    .step-stat > small{
+        display: block;
+        color: hsl(var(--Light-gray));
+    }
+    .step-stat > strong{
+        display: block;
+        color: hsl(var(--white));
+        font-weight: var(--fwB);
+    }
+}

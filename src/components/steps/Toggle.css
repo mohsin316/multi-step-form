@@ -1,0 +1,102 @@
+/* toggle */
+
+fieldset {
+	border: none;
+    width: 100%;
+}
+
+.form-toggle{
+    background-color: hsl(var(--Light-gray) / .3);
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-block: 1rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+}
+
+.form-toggle label{
+    cursor: pointer;
+}
+.form-toggle  .true{
+    color: hsl(var(--Marine-blue));
+    /* font-weight: var(--fwB); */
+    text-shadow: .75px 0px 0px hsl(var(--Marine-blue));
+}
+
+/* holder of the radio buttons */
+.form-toggle .toggle-wrapper{
+    font-size: 1rem;
+	display: inline-block;
+	vertical-align: middle;
+	width: 3rem;
+	height: 1.5rem;
+	border-radius: 3.5rem;
+	position: relative; 
+    overflow: hidden;
+}
+
+/* inside the toggle main trigger */
+.form-toggle input[type='radio']{
+    display: inline-block;
+    margin-right: -2px;
+    top: 0;
+    bottom: 0;
+    height: 30px;
+    min-width: 30px;
+    width: auto;
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0;
+}
+
+/* toggle circle and the background of the radio buttons. */
+.form-toggle .toggle-switcher{
+    position: absolute;
+    top: 20%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+}
+
+.form-toggle .toggle-background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(var(--Marine-blue));
+}
+
+
+/* functionality  */
+.form-toggle input[type='radio']:nth-child(0){
+    left: 0;
+}
+
+.form-toggle input[type='radio']:nth-child(1){
+    right: 0;
+}
+
+.form-toggle input[type='radio']:focus-visible ~ .toggle-switcher{
+    border: 1px dashed black;
+}
+
+
+.form-toggle input[type='radio']:not(:checked) {
+    z-index: 2;
+}
+
+@media (min-width:50rem){
+    .form-toggle{
+        margin-top: 0;
+    }
+}
+
+

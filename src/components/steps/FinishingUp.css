@@ -1,0 +1,151 @@
+.finish-form{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: left;
+    background-color: white;
+    border-radius: 10px;
+    transform: translateY(-50px);
+    max-width: 400px;
+
+}
+.finish-form h1{
+    font-size: 1.5rem;
+    color: hsl(var(--Marine-blue));
+}
+.finish-form p{
+    color: hsl(var(--cool-gray));
+}
+
+.finish-form .bill-container{
+    width: 100%;
+    background-color: hsl(var(--Light-gray) / .5);
+    padding: 1rem;
+    margin-top: 1.25rem;
+    border-radius: 10px;
+}
+
+.finish-form .plan{
+    color: hsl(var(--Marine-blue));
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.finish-form .plan div button{
+    color: hsl(var(--cool-gray));
+    text-decoration: underline;
+    cursor: pointer;
+    border: none;
+    text-align: left;
+    width: 50px;
+    font-size: small;
+    background-color: transparent;
+}
+.finish-form .plan div button:hover{
+    color: hsl(var(--Marine-gray));
+}
+
+
+.finish-form .plan > small {
+    align-self: center;
+    font-weight: var(--fwB);
+
+}
+
+.finish-form .plan div{
+    display: flex;
+    flex-direction: column;
+}
+
+.finish-form .addOn{
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid hsl(var(--cool-gray) / .5);
+}
+
+.finish-form .addOn div{
+    display: flex;
+    justify-content: space-between;
+}
+.finish-form .addOn div > small:first-child{
+    color: hsl(var(--cool-gray));
+}
+.finish-form .addOn div > small:last-child{
+    color: hsl(var(--Marine-blue));
+    font-weight: var(--fwM);
+
+}
+
+.finish-form .addOn div:not(:first-child){
+    margin-top: .5rem;
+}
+
+.finish-form .summary{
+    color: hsl(var(--cool-gray));
+    margin-top: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    margin-inline:  auto;
+    width: 90%;
+}
+.finish-form .summary small:first-child{
+    color: hsl(var(--cool-gray));
+}
+.finish-form .summary small:last-child{
+    color: hsl(var(--purpleish-blue));
+    font-weight: var(--fwB);
+
+}
+
+@media (min-width:60rem){
+    .finish-form{
+        padding: 2rem 1rem;
+        margin-top: 1rem;
+        text-align: left;
+        border-radius: 10px;
+        transform: translateY(0);
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .finish-form h1{
+        margin-bottom: .5rem;
+        font-size: 2rem;
+        color: hsl(var(--Marine-blue));
+    }
+    
+    .finish-form p{
+        margin-bottom: 2rem;
+        color: hsl(var(--cool-gray));
+    }
+
+    .finish-form .bill-container{
+        width: 100%;
+        background-color: hsl(var(--Light-gray) / .2);
+        padding: 2rem 2rem   ;
+        margin-top: 1.25rem;
+        border-radius: 10px;
+    }
+
+    .finish-form .summary,
+    .finish-form .addOn,
+    .finish-form .plan > button{
+        font-size: 1.2rem;
+    }
+    .finish-form .plan{
+        margin-bottom: 1.5rem;
+    }
+    .finish-form .summary{
+        margin-top: 1.8rem;
+    }
+
+    .finish-form .summary small:last-child{
+        font-size: 1.35rem;
+    }
+    .finish-form .plan small{
+        font-size: 1.2rem;
+    }
+}

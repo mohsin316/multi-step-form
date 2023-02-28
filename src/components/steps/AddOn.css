@@ -1,0 +1,142 @@
+.addOn-form{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin-inline: .75rem;
+    padding: 2rem 1rem;
+    text-align: left;
+    background-color: white;
+    border-radius: 10px;
+    transform: translateY(-50px);
+    max-width: 400px;
+
+}
+
+.addOn-form h1{
+    font-size: 1.5rem;
+    color: hsl(var(--Marine-blue));
+}
+.addOn-form p{
+    color: hsl(var(--cool-gray));
+    margin-bottom: 1.25rem;
+}
+
+.addOn-form strong{
+    color: hsl(var(--Marine-blue));
+}
+
+.addOn-form label{
+    outline: 1px solid hsl(var(--cool-gray));
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.addOn-form label:where(:not(:last-child)){
+    margin-bottom: 1rem;
+}
+
+.addOn-form input{
+    width: 20px;
+    height: 20px;
+}
+
+.addOn-form label > div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.addOn-form label > div strong{
+    font-size: 1rem;
+}
+
+.addOn-form label > div small{
+    font-size: .85rem;
+    color: hsl(var(--cool-gray));
+}
+
+.addOn-form label > small{
+    margin-left: auto;
+    font-size: .85rem;
+    color: hsl(var(--purpleish-blue));
+}
+
+
+@media (max-width: 350px){
+    .addOn-form label > div strong{
+        font-size: .9rem;
+    }
+    
+    .addOn-form label > div small{
+        font-size: .75rem;
+        color: hsl(var(--cool-gray));
+    }
+    
+    .addOn-form label > small{
+        margin-left: auto;
+        font-size: .75rem;
+        color: hsl(var(--purpleish-blue));
+    }
+    
+
+}
+
+@media (min-width:60rem){
+    .addOn-form{
+        padding: 2rem 1rem;
+        margin-top: 1rem;
+        text-align: left;
+        border-radius: 10px;
+        transform: translateY(0);
+        max-width: 100%;
+        width: 100%;
+
+    }
+
+    .addOn-form h1{
+        margin-bottom: .5rem;
+        font-size: 2rem;
+        color: hsl(var(--Marine-blue));
+    }
+    .addOn-form p{
+        margin-bottom: 2rem;
+    }
+
+        
+    .addOn-form label{
+        padding: 1.25rem 1.5rem;
+    }
+
+    .addOn-form label:where(:not(:last-child)){
+        margin-bottom: 1.15rem;
+    }
+
+    .addOn-form input{
+        width: 20px;
+        height: 20px;
+    }
+
+    .addOn-form label > div{
+        display: flex;
+        flex-direction: column;
+        margin-left: 25px;
+    }
+    .addOn-form label > div strong{
+        font-size: 1.15rem;
+    }
+
+    .addOn-form label > div small{
+        font-size: .85rem;
+    }
+
+    .addOn-form label > small{
+        font-size: .9rem;
+    }
+
+}
+

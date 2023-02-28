@@ -1,24 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
 
+// hooks
+import { useHandleForm } from './hooks/useHandleForm'
+
+// components
+import Info from './components/Info';
+import MyForm from './components/Form';
+
+// framer motion
+import { motion as m } from 'framer-motion'
+
 function App() {
+  
+const {step, next, prev, goto} = useHandleForm(['0', '1', '2', '3', '4'])
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <m.main
+      initial={{y:'-100%'}}
+      animate={{y:'0%'}}
+    >
+      <Info
+        step={step}
+      />
+      <MyForm 
+        step={step}
+        next={next} 
+        prev={prev}
+        goto={goto}
+      />
+    </m.main>
   );
 }
 
