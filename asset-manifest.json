@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/multi-step-form%20/static/css/main.40d05c05.css",
+    "main.js": "/multi-step-form%20/static/js/main.3c2b19b4.js",
+    "static/media/bg-sidebar-desktop.svg": "/multi-step-form%20/static/media/bg-sidebar-desktop.6918153f38678372ceb1.svg",
+    "static/media/bg-sidebar-mobile.svg": "/multi-step-form%20/static/media/bg-sidebar-mobile.ad41661b40ca0b967f3a.svg",
+    "static/media/icon-advanced.svg": "/multi-step-form%20/static/media/icon-advanced.705bd10c4c1f688871d729633f0ca4ae.svg",
+    "index.html": "/multi-step-form%20/index.html",
+    "static/media/icon-thank-you.svg": "/multi-step-form%20/static/media/icon-thank-you.ee753f231cc5a5789b8eb922a96472c0.svg",
+    "static/media/icon-pro.svg": "/multi-step-form%20/static/media/icon-pro.2e7e377da9c658d608624304a0f8dae6.svg",
+    "static/media/icon-arcade.svg": "/multi-step-form%20/static/media/icon-arcade.a08c098289a31bb2f66d675be71565b3.svg",
+    "main.40d05c05.css.map": "/multi-step-form%20/static/css/main.40d05c05.css.map",
+    "main.3c2b19b4.js.map": "/multi-step-form%20/static/js/main.3c2b19b4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.40d05c05.css",
+    "static/js/main.3c2b19b4.js"
+  ]
+}
