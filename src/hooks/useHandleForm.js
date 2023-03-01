@@ -19,8 +19,8 @@ export function useHandleForm(steps){
         })
     }
 
-    const goto = () => {
-        setStep(1)
+    const goto = (n) => {
+        setStep(n)
     }
 
     return {

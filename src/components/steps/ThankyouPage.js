@@ -19,7 +19,7 @@ export default function ThankyouPage({goto}) {
   useEffect(() => {
     console.log('Form submitted!')
     setTimeout(() => {
-      goto()
+      goto(0)
     }, 5000);
   }, [goto])
   return (

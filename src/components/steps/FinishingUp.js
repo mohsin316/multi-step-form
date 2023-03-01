@@ -99,7 +99,7 @@ export default function FinishingUp({values, goto}) {
         <div className="plan">
           <div>
             <strong>{planName}({values.isOn === 'false' ? 'monthly' : 'yearly'})</strong>
-            <button type='button' onClick={goto}>Change</button>
+            <button type='button' onClick={() => goto(1)}>Change</button>
           </div>
           <small>${plan}/{values.isOn === 'false' ? 'mo' : 'yr'}</small>
         </div>
